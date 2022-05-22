@@ -109,7 +109,7 @@
 
         const nums = [1,2,3];
         console.log(nums[0], nums[2]);
-        // can also do console.log (nums [0], nums [nums.length-1])
+        // can also do console.log (nums [0], nums [nums.length-1]) --> this is to get the last index number if we do not know array size
         
         nums [0] = 4;
         console.log(nums);
@@ -126,10 +126,10 @@
             nums.push(5,6);
             console.log(nums);
 
-            nums[4] = 10;
+            nums[nums.length - 1] = 10;
             console.log(nums);
 
-            const lastNum = nums.pop ();
+            const lastNum = nums.pop (); // pops off last number and stores in lastNum
             console.log(nums);
             console.log(lastNum);
 
